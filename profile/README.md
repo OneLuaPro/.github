@@ -1,14 +1,14 @@
 # OneLuaPro
 **OneLuaPro** is ...
 
-- a portable, monolithic distribution of the [Lua](http://www.lua.org/) programming language for the Windows operation system (should run from Windows 7 on upwards),
+- a portable, monolithic, and curated distribution of the [Lua](http://www.lua.org/) programming language for the Windows operation system (should run from Windows 7 on upwards),
 - natively build with MSVC compilers, without the unnecessary overhead of a complete MS Visual Studio installation,
 - provided as `Win32` and `x64` binaries,
 - targeted for corporate application scenarios on computers without permanent Internet access.
 
 **OneLuaPro** is not ...
 
-- made for compatibility with Lua package managers like `luarocks` .
+- made for compatibility with Lua package managers like `luarocks`.
 
 **OneLuaPro** does not ...
 
@@ -16,7 +16,7 @@
 
 **OneLuaPro** can ...
 
-- be build and installed with minimum effort and toolchain-footprint as all its components are prepared for the [CMake](https://cmake.org/) build infrastructure.
+- be built and installed with minimum effort and toolchain-footprint as all its components are prepared for the [CMake](https://cmake.org/) build infrastructure,
 - be installed entirely without administrative privileges using the released zip-archives.
 
 ## Download and Installation
@@ -25,11 +25,15 @@ Download **OneLuaPro** here: https://github.com/OneLuaPro/OneLuaPro/releases
 
 Unpack downloaded zip-archive into a directory of your choice. The suggested installation path is `c:\Apps`, which is typically accessible without administrative rights. Manually extend `PATH`-variable to the `bin` directory of your installation, e.g. `C:\Apps\OneLuaPro-Win32\bin` or `C:\Apps\OneLuaPro-x64\bin`. Documentation and code examples (if available) are located in `<OneLuaPro_Install_Path>\share\doc`.
 
+## Building OneLuaPro
+
+See instructions in **OneLuaPro** head repository: https://github.com/OneLuaPro/OneLuaPro
+
 ## Contents of the OneLuaPro Distribution
 
 **OneLuaPro** comprises not only the Lua programming language binaries, but also a number of mature and widely-used extensions in their respective most recent version, all of which tailored to **OneLuaPro**'s needs:
 
-| Module                                                      | Purpose                                                      | Version                                 | License                                                      |
+| Extension                                                   | Purpose                                                      | Version                                 | License                                                      |
 | ----------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------- | ------------------------------------------------------------ |
 | [Lua](https://github.com/KritzelKratzel/lua)                | The Lua Programming Language                                 | 5.4.6                                   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [LuaSocket](https://github.com/OneLuaPro/luasocket)         | Network support for the Lua language                         | 3.1.0 with commits until Oct 27, 2023   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
