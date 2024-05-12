@@ -1,7 +1,7 @@
 # OneLuaPro
 **OneLuaPro** is ...
 
-- a portable, monolithic, and curated distribution of the [Lua](http://www.lua.org/) programming language for the Windows operation system (should run from Windows 7 on upwards),
+- a portable, monolithic, and curated distribution of the [Lua](http://www.lua.org/) programming language for the Windows operation system (Windows 10 on upwards),
 - natively build with MSVC compilers, without the unnecessary overhead of a complete MS Visual Studio installation,
 - provided as `Win32` and `x64` binaries,
 - targeted for corporate application scenarios on computers without permanent Internet access.
@@ -43,11 +43,11 @@ See instructions in **OneLuaPro** head repository: https://github.com/OneLuaPro/
 | [Luacheck](https://github.com/OneLuaPro/luacheck)           | Static analyzer and a linter for Lua. It detects various issues such as usage of undefined global variables, unused variables and values, accessing uninitialized variables, unreachable code and more. | 1.1.2                                   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lsleep](https://github.com/OneLuaPro/lsleep)               | Adds the missing `sleep()` and `usleep()` functions to Lua.  | 1.05                                    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [libffi](https://github.com/OneLuaPro/libffi)               | A Portable Foreign Function Interface Library.               | 3.4.6 with commits until Mar 19, 2024   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [libusb](https://github.com/OneLuaPro/libusb)               | A library for USB device access.                             | 1.0.27 with commits until Apr 20, 2024  | [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) |
+| [libusb](https://github.com/OneLuaPro/libusb)               | A library for USB device access.                             | 1.0.27                                  | [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) |
 | [MoonUSB](https://github.com/OneLuaPro/moonusb)             | Lua binding library for libusb, allowing applications to access and use USB devices. | 0.1 with commits until Jul 25, 2023     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [libuv](https://github.com/libuv/libuv)                     | Cross-platform asynchronous I/O                              | 1.48.0                                  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [luv](https://github.com/OneLuaPro/luv)                     | Bare libuv bindings for Lua                                  | 1.48.0-2 with commits until Mar 2, 2024 | [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) |
-| [lanes](https://github.com/OneLuaPro/lanes)                 | Lua Lanes - multithreading in Lua                            | 3.17.0 with commits until May 3, 2024   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [lanes](https://github.com/OneLuaPro/lanes)                 | Lua Lanes - multithreading in Lua                            | 3.17.0 with commits until May 7, 2024   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 ## License
 
