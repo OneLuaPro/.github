@@ -48,6 +48,7 @@ See instructions in **OneLuaPro** head repository: https://github.com/OneLuaPro/
 | [libuv](https://github.com/libuv/libuv)                     | Cross-platform asynchronous I/O                              | 1.48.0                                  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [luv](https://github.com/OneLuaPro/luv)                     | Bare libuv bindings for Lua                                  | 1.48.0-2 with commits until Mar 2, 2024 | [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) |
 | [lanes](https://github.com/OneLuaPro/lanes)                 | Lua Lanes - multithreading in Lua                            | 3.17.0 with commits until May 7, 2024   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [luaping](https://github.com/OneLuaPro/luaping)             | The missing ping command for Lua with variable timeout       | 1.0                                     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 ## License
 
