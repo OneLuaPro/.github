@@ -23,7 +23,7 @@
 
 Download **OneLuaPro** here: https://github.com/OneLuaPro/OneLuaPro/releases
 
-Unpack downloaded zip-archive into a directory of your choice. The suggested installation path is `c:\Apps`, which is typically accessible without administrative rights. Manually extend `PATH`-variable to the `bin` directory of your installation, e.g. `C:\Apps\OneLuaPro-Win32\bin` or `C:\Apps\OneLuaPro-x64\bin`. Documentation and code examples (if available) are located in `<OneLuaPro_Install_Path>\share\doc`.
+Unpack downloaded zip-archive into a directory of your choice. The suggested installation path is `c:\Apps`, which is typically accessible without administrative rights. Manually extend `PATH`-variable to the `bin` directory of your installation, e.g. `C:\Apps\OneLuaPro-<VERSION>-x64\bin`. Documentation and code examples (if available) are located in `<OneLuaPro_Install_Path>\share\doc`.
 
 ## Building OneLuaPro
 
@@ -51,6 +51,7 @@ See instructions in **OneLuaPro** head repository: https://github.com/OneLuaPro/
 | [luaping](https://github.com/OneLuaPro/luaping)             | The missing ping command for Lua with variable timeout       | 1.0 with commits until Aug 25, 2024      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [luadaqmx](https://github.com/OneLuaPro/luadaqmx)           | OneLuaPro gateway to National Instrument's DAQmx driver      | 0.1 with commits until Aug 25, 2024      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua4882](https://github.com/OneLuaPro/lua4882)             | OneLuaPro gateway to National Instrument's NI-488.2 (GPIB) driver | 1.0                                      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [LPeg](https://github.com/OneLuaPro/LPeg)                   | Parsing Expression Grammars For OneLuaPro.                   | 1.1.0                                    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 ## License
 
