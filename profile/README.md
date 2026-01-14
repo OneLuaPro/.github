@@ -90,6 +90,7 @@ The provided installer can be used on Windows 7 but may have some flaws, which c
 | [luasec](https://github.com/OneLuaPro/luasec)                | Secure connections to any Lua application or script          | v1.3.2 with commits until Jul 10, 2025   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua-openssl](https://github.com/OneLuaPro/lua-openssl)      | OpenSSL bindings for Lua                                     | v0.10.12 with commits until Dec 31, 2025 | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [ldoc](https://github.com/OneLuaPro/ldoc)                    | Lua documentation generator which can also process C extension source files | v1.5.0 with commits until Jul 22, 2024   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [luasystem](https://github.com/OneLuaPro/luasystem)          | Platform independent system calls for Lua                    | v0.6.3 with commits until Jan 9, 2026    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 👉 Are you missing an important Lua extension or Lua library? Please let us know [here](https://github.com/orgs/OneLuaPro/discussions/categories/ideas). 👈
 
