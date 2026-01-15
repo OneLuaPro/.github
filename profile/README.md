@@ -92,6 +92,7 @@ The provided installer can be used on Windows 7 but may have some flaws, which c
 | [ldoc](https://github.com/OneLuaPro/ldoc)                    | Lua documentation generator which can also process C extension source files | v1.5.0 with commits until Jul 22, 2024   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [luasystem](https://github.com/OneLuaPro/luasystem)          | Platform independent system calls for Lua                    | v0.6.3 with commits until Jan 9, 2026    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua_cliargs](https://github.com/OneLuaPro/lua_cliargs)      | Command-line argument parsing module for Lua                 | v3.0.2 with commits until Dec 18, 2023   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [dkjson](https://github.com/OneLuaPro/dkjson)                | JSON module written in Lua                                   | v2.8                                     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 👉 Are you missing an important Lua extension or Lua library? Please let us know [here](https://github.com/orgs/OneLuaPro/discussions/categories/ideas). 👈
 
