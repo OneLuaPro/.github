@@ -94,6 +94,7 @@ The provided installer can be used on Windows 7 but may have some flaws, which c
 | [lua_cliargs](https://github.com/OneLuaPro/lua_cliargs)      | Command-line argument parsing module for Lua                 | v3.0.2 with commits until Dec 18, 2023   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [dkjson](https://github.com/OneLuaPro/dkjson)                | JSON module written in Lua                                   | v2.8                                     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [say](https://github.com/OneLuaPro/say)                      | Lua string hashing library, useful for internationalization  | v1.4.1 with commits until Aug 13, 2023   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [luassert](https://github.com/OneLuaPro/luassert)            | Assertion library for Lua                                    | v1.9.0 with commits until Nov 7, 2024    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 👉 Are you missing an important Lua extension or Lua library? Please let us know [here](https://github.com/orgs/OneLuaPro/discussions/categories/ideas). 👈
 
