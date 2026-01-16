@@ -98,6 +98,7 @@ The provided installer can be used on Windows 7 but may have some flaws, which c
 | [mediator_lua](https://github.com/OneLuaPro/mediator_lua)    | Mediator pattern implementation for pub-sub management       | v1.1.2 with commits until Feb 24, 2020   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua-term](https://github.com/OneLuaPro/lua-term)            | Terminal operations for Lua                                  | v0.8 with commits until Jul 2, 2024      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua-utf8](https://github.com/OneLuaPro/luautf8)             | UTF-8 support module for Lua                                 | v0.2.0 with commits until Nov 15, 2025   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [inifile](https://github.com/OneLuaPro/inifile)              | A simple and complete ini-File Parser for Lua                | v1.1                                     | [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause) |
 
 👉 Are you missing an important Lua extension or Lua library? Please let us know [here](https://github.com/orgs/OneLuaPro/discussions/categories/ideas). 👈
 
