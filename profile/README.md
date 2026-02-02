@@ -37,8 +37,11 @@ msiexec.exe /i OneLuaPro-<VERSION>-x64.msi /qb
 # Customized non-interactive installation into c:\Apps\OneLuaPro
 msiexec.exe /i OneLuaPro-<VERSION>-x64.msi /qb INSTALL_ROOT="C:\Apps\OneLuaPro"
 
-# Software Removal
-msiexec.exe /x OneLuaPro-5.4.8.2-x64.msi /qb
+# Standard non-interactve removal (from default installation path)
+msiexec.exe /x OneLuaPro-<VERSION>-x64.msi /qb
+
+# Customized non-interactive removal (from custom installation path)
+msiexec.exe /x OneLuaPro-<VERSION>-x64.msi /qb INSTALL_ROOT="C:\Apps\OneLuaPro"
 ```
 
 The installer creates or removes entries in the Windows Start Menu and updates the `PATH`-variable accordingly. Software removal is also possible via Windows Settings "Apps & Features".
@@ -79,7 +82,7 @@ The provided installer can be used on Windows 7 but may have some flaws, which c
 | [luadaqmx](https://github.com/OneLuaPro/luadaqmx)            | OneLuaPro gateway to National Instrument's DAQmx driver      | v0.1 with commits until Oct 13, 2024      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua4882](https://github.com/OneLuaPro/lua4882)              | OneLuaPro gateway to National Instrument's NI-488.2 (GPIB) driver | v1.2.1                                    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [LPeg](https://github.com/OneLuaPro/LPeg)                    | Parsing Expression Grammars For OneLuaPro                    | v1.1.0                                    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [wxLua](https://github.com/pkulchenko/wxlua)                 | wxLua is a Lua wrapper for the cross-platform wxWidgets GUI library | v3.2.0.2 with commits until Sep 4, 2023   | [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) |
+| [wxLua](https://github.com/OneLuaPro/wxlua)                  | wxLua is a Lua wrapper for the cross-platform wxWidgets GUI library | v3.2.0.2 with commits until Sep 4, 2023   | [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) |
 | [ZeroBrane Studio](https://github.com/OneLuaPro/ZeroBraneStudio) | lightweight cross-platform Lua IDE with code completion, syntax highlighting, remote debugger, code analyzer, live coding, and debugging support | v2.01 with commits until May 19, 2024     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [Penlight](https://github.com/OneLuaPro/Penlight)            | A set of pure Lua libraries focusing on input data handling (such as reading configuration files), functional programming (such as map, reduce, placeholder expressions,etc), and OS path management. Much of the functionality is inspired by the Python standard libraries. | v1.15.0 with commits until Jan 19, 2026   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lcomplex](https://github.com/OneLuaPro/lcomplex)            | Lua complex numbers support module                           | v1.0                                      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
