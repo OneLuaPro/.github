@@ -65,6 +65,10 @@ The provided installer can be used on Windows 7 but may have some flaws, which c
 - In case the installer complains about `PATH` environment variable being too long to be extended for OneLuaPro, install without updating the variable and edit `PATH` manually by adding `C:\Program Files\OneLuaPro\bin` (or the installation directory of your choice) to the content of `PATH`.
 - ZeroBraneStudio may complain about a missing DLL (`vcruntime140_1.dll`). Simply copy this DLL from `C:\Program Files\OneLuaPro\bin` to `C:\Program Files\OneLuaPro\opt\ZeroBraneStudio`. This flaw may also occur after installation using the provided ZIP-archive.
 
+## OneLuaPro Help Center
+
+Documentation and reference manuals are available via the **OneLuaPro Help Center**. A link to the Help Center is automatically added to the **Start menu entry**. You can also access it directly at `<INSTALL_PATH>\share\doc\index.html`.
+
 ## Contents of the OneLuaPro Distribution
 
 **OneLuaPro** comprises not only the Lua programming language binaries, but also a number of mature and widely-used extensions (modules) in their respective most recent version, all of which tailored to **OneLuaPro**'s needs. All version numbers follow the `v[Base]-[Commits]-[Hash]` format: The first part indicates the **stable base version**, followed by the **number of additional changes** since the last release, and a short **identifier (hash)** of the exact source code.
