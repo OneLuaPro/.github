@@ -2,7 +2,7 @@
 **OneLuaPro** is ...
 
 - a portable, monolithic, and curated distribution of the [Lua](http://www.lua.org/) programming language for the Windows operation system,
-- natively built with MSVC / IntelLLVM compilers,
+- natively built with Intel<sup>®</sup> oneAPI C++ compiler,
 - provided as `x64` signed binaries and signed installers for Windows 7 to Windows 11,
 - targeted for corporate application scenarios on computers without permanent Internet access.
 
@@ -19,6 +19,27 @@
 - be built with minimum effort and toolchain-footprint as all its components are prepared for the [CMake](https://cmake.org/) build infrastructure,
 - be installed entirely without administrative privileges using the released zip-archives,
 - be installed or uninstalled using the provided signed installer packages.
+
+## Hardware Requirements & Performance
+
+**OneLuaPro** is optimized for high-performance numerical computing using modern CPU instruction sets. To achieve the best balance between compatibility and speed, the complete distribution is compiled with **Intel oneAPI C-compiler** using multi-target dispatching.
+
+### Minimum Requirements
+
+- **Intel:** 2nd Generation Core processors (Sandy Bridge, 2011) or newer,
+- **AMD:** Bulldozer-based processors (FX-series, 2011) or newer,
+- **OS:** Windows 7 SP1, Windows 10, or Windows 11 (required for AVX state management).
+
+> [!IMPORTANT]
+>
+> CPUs older than 2011 (e.g., Core 2 Duo, 1st Gen i5) are not supported and will result in an "Illegal Instruction" error.
+
+### Automatic Hardware Acceleration
+All OneLuaPro binaries feature **Dynamic Dispatch**, meaning they automatically detect your CPU's capabilities at runtime and activate the fastest available code path:
+
+- **AVX (Standard):** Provides 256-bit vectorization on older systems (e.g., i5-2xxx/3xxx),
+- **AVX2 (Advanced):** Enabled automatically on Intel Haswell (4th Gen) and newer, as well as all AMD Ryzen processors,
+- **AVX-512 (Ultra):** Leverages 512-bit registers on modern Intel Xeon and high-end Core i7/i9 processors (11th Gen+) for maximum throughput.
 
 ## Download and Installation
 
@@ -81,12 +102,12 @@ Documentation and reference manuals are available via the **OneLuaPro Help Cente
 | [librs232](https://github.com/OneLuaPro/librs232)            | Multi-platform library for serial communications over RS-232 (serial port) | `v1.0.3-119-gda35def`   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [LuaFileSystem](https://github.com/OneLuaPro/luafilesystem)  | Complements the set of functions related to file systems offered by the standard Lua distribution | `v1.9.0-10-g707cb06`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [argparse](https://github.com/OneLuaPro/argparse)            | Feature-rich command line parser for Lua inspired by argparse for Python | `v0.7.1-13-gdebe947`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [Luacheck](https://github.com/OneLuaPro/luacheck)            | Static analyzer and a linter for Lua. It detects various issues such as usage of undefined global variables, unused variables and values, accessing uninitialized variables, unreachable code and more. | `v1.2.0-38-ge47db4a`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [Luacheck](https://github.com/OneLuaPro/luacheck)            | Static analyzer and a linter for Lua. It detects various issues such as usage of undefined global variables, unused variables and values, accessing uninitialized variables, unreachable code and more. | `v1.2.0-40-g68c84bd`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lsleep](https://github.com/OneLuaPro/lsleep)                | Adds the missing `sleep()` and `usleep()` functions to Lua.  | `v1.05-6-g531d702`      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [lua-ffi](https://github.com/OneLuaPro/lua-ffi)              | A portable lightweight C foreign function interface (FFI) for Lua, based on libffi | `v1.1.0-24-gbc3fc37`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [lua-ffi](https://github.com/OneLuaPro/lua-ffi)              | A portable lightweight C foreign function interface (FFI) for Lua, based on libffi | `v1.1.0-31-ga8ae836`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [MoonUSB](https://github.com/OneLuaPro/moonusb)              | Lua binding library for libusb, allowing applications to access and use USB devices. | `v0.1-30-gebc05a5`      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [luv](https://github.com/OneLuaPro/luv)                      | Bare libuv bindings for Lua                                  | `v1.51.0-2-41-g509022a` | [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) |
-| [lanes](https://github.com/OneLuaPro/lanes)                  | Lua Lanes - multithreading in Lua                            | `v4.0.0-40-g39b1c1c`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [luv](https://github.com/OneLuaPro/luv)                      | Bare libuv bindings for Lua                                  | `v1.52.1-0-30-gb115c8a` | [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) |
+| [lanes](https://github.com/OneLuaPro/lanes)                  | Lua Lanes - multithreading in Lua                            | `v4.0.0-42-g70389ef`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [luaping](https://github.com/OneLuaPro/luaping)              | The missing ping command for Lua                             | `v1.1.1`                | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [luadaqmx](https://github.com/OneLuaPro/luadaqmx)            | OneLuaPro gateway to National Instrument's DAQmx driver      | `v0.1.2`                | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua4882](https://github.com/OneLuaPro/lua4882)              | OneLuaPro gateway to National Instrument's NI-488.2 (GPIB) driver | `v1.2.3`                | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
@@ -110,10 +131,11 @@ Documentation and reference manuals are available via the **OneLuaPro Help Cente
 | [mediator_lua](https://github.com/OneLuaPro/mediator_lua)    | Mediator pattern implementation for pub-sub management       | `v1.1.2-0-8-gefa5daf`   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua-term](https://github.com/OneLuaPro/lua-term)            | Terminal operations for Lua                                  | `v0.8-7-g75066e0`       | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua-utf8](https://github.com/OneLuaPro/luautf8)             | UTF-8 support module for Lua                                 | `v0.2.1-7-g3ae0b91`     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [inifile](https://github.com/OneLuaPro/inifile)              | A simple and complete ini-File Parser for Lua                | `v1.1-2-gf7b742d`       | [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause) |
-| [busted](https://github.com/OneLuaPro/busted)                | Elegant Lua unit testing                                     | `v2.3.0-7-g03e3bbc`     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [inifile](https://github.com/OneLuaPro/inifile)              | A simple and complete ini-File Parser for Lua                | `v1.1-2-gf7b742d`       | [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
+| [busted](https://github.com/OneLuaPro/busted)                | Elegant Lua unit testing                                     | `v2.3.0-9-gfddc67b`     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lunit](https://github.com/OneLuaPro/lunit)                  | Unit testing for Lua                                         | `v0.8.1-1-g61e9b3a`     | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [lsqlite3](https://github.com/OneLuaPro/lsqlite3)            | Extended lsqlite3 module for Lua: A lightweight SQLite3 wrapper featuring the complete SQLean power-pack | `v0.9.6-1`              | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [lsqlite3](https://github.com/OneLuaPro/lsqlite3)            | Extended lsqlite3 module for Lua: A lightweight SQLite3 wrapper featuring the complete SQLean power-pack | `v0.9.6-2`              | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [Lua-cURLv3](https://github.com/OneLuaPro/Lua-cURLv3)        | Lua binding to libcurl                                       | `v0.3.13-6-gbd885bd`    | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 👉 Are you missing an important Lua extension or Lua library? Please let us know [here](https://github.com/orgs/OneLuaPro/discussions/categories/ideas). 👈
 
@@ -123,8 +145,8 @@ Documentation and reference manuals are available via the **OneLuaPro Help Cente
 
 | Dependency                                                   | Purpose                                                      | Used by                                                      | Version                    | License                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------- | ------------------------------------------------------------ |
-| [libffi](https://github.com/OneLuaPro/libffi)                | A Portable Foreign Function Interface Library.               | [lua-ffi](https://github.com/OneLuaPro/lua-ffi)              | `v3.5.2-32-g90b5f66`       | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-| [libusb](https://github.com/OneLuaPro/libusb)                | A library for USB device access.                             | [MoonUSB](https://github.com/OneLuaPro/moonusb)              | `v1.0.30-rc1-26-g52eccd19` | [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) |
+| [libffi](https://github.com/OneLuaPro/libffi)                | A Portable Foreign Function Interface Library.               | [lua-ffi](https://github.com/OneLuaPro/lua-ffi)              | `v3.5.2-34-g26c59e0`       | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [libusb](https://github.com/OneLuaPro/libusb)                | A library for USB device access.                             | [MoonUSB](https://github.com/OneLuaPro/moonusb)              | `v1.0.30-rc1-38-gaea2f056` | [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) |
 | [libuv](https://github.com/libuv/libuv)                      | Cross-platform asynchronous I/O                              | [luv](https://github.com/OneLuaPro/luv)                      | `v1.52.1`                  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [NI‑DAQmx](https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html) | Provides a high‑performance, unified API for controlling and acquiring data from National Instruments measurement hardware | [luadaqmx](https://github.com/OneLuaPro/luadaqmx)            | `2025 Q4`                  | [See here](https://www.ni.com/en/about-ni/legal/software-license-agreement.html) |
 | [NI-488.2](https://www.ni.com/en/support/downloads/drivers/download.ni-488-2.html) | Provides support for customers using NI GPIB controllers and NI embedded controllers with GPIB ports | [lua4882](https://github.com/OneLuaPro/lua4882)              | `2025 Q4`                  | [See here](https://www.ni.com/en/about-ni/legal/software-license-agreement.html) |
@@ -134,8 +156,14 @@ Documentation and reference manuals are available via the **OneLuaPro Help Cente
 | [zlib-ng](https://github.com/zlib-ng/zlib-ng)                | zlib replacement with optimizations for "next generation" systems | [lua-zlib](https://github.com/OneLuaPro/lua-zlib)            | `v2.3.3`                   | [![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib) |
 | [dlfcn-win32](https://github.com/dlfcn-win32/dlfcn-win32)    | dlfcn-win32 is an implementation of `dlfcn` for Windows      | Prerequisite for building [lua-ffi](https://github.com/OneLuaPro/lua-ffi) | `v1.4.2-19-g614073d`       | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [libressl](https://www.libressl.org/)                        | An [open-source](https://en.wikipedia.org/wiki/Open-source_software) implementation of the [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) (TLS) protocol | [luasec](https://github.com/OneLuaPro/luasec), [lua-openssl](https://github.com/OneLuaPro/lua-openssl) | `v4.2.1-1-gc88f4da`        | [See here](https://github.com/OneLuaPro/OneLuaPro/blob/main/LICENSE.txt) |
-| [SQLite](https://www.sqlite.org/)                            | SQL database engine                                          | [sqlean](https://github.com/OneLuaPro/sqlean)                | `v3.51.2`                  | Public Domain                                                |
-| [sqlean](https://github.com/OneLuaPro/sqlean)                | The ultimate set of SQLite extensions                        | [lsqlite3](https://github.com/OneLuaPro/lsqlite3)            | `v0.28.1-11-gd3ea8f4`      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [SQLite](https://www.sqlite.org/)                            | SQL database engine                                          | [sqlean](https://github.com/OneLuaPro/sqlean)                | `v3.51.3`                  | Public Domain                                                |
+| [sqlean](https://github.com/OneLuaPro/sqlean)                | The ultimate set of SQLite extensions                        | [lsqlite3](https://github.com/OneLuaPro/lsqlite3)            | `v0.28.1-12-g4141d89`      | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [brotli](https://github.com/google/brotli)                   | Brotli compression format                                    | [curl](https://github.com/curl/curl)                         | `v1.2.0`                   | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [zstd](https://github.com/facebook/zstd)                     | Fast real-time compression algorithm                         | [curl](https://github.com/curl/curl)                         | `v1.5.7`                   | [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
+| [nghttp2](https://github.com/nghttp2/nghttp2)                | HTTP/2 C Library and tools                                   | [curl](https://github.com/curl/curl)                         | `v1.68.1`                  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [ngtcp2](https://github.com/ngtcp2/ngtcp2)                   | IETF QUIC protocol implementation                            | [curl](https://github.com/curl/curl)                         | `v1.21.0`                  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [nghttp3](https://github.com/ngtcp2/nghttp3)                 | HTTP/3 library written in C                                  | [curl](https://github.com/curl/curl)                         | `v1.15.0`                  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+| [curl](https://github.com/curl/curl)                         | Library for transferring data with URL syntax                | [Lua-cURLv3](https://github.com/OneLuaPro/Lua-cURLv3)        | `v8.19.0`                  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
 ## Building OneLuaPro
 
