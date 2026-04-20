@@ -107,7 +107,7 @@ Documentation and reference manuals are available via the **OneLuaPro Help Cente
 
 **OneLuaPro** comprises not only the Lua programming language binaries, but also a number of mature and widely-used extensions (modules) in their respective most recent version, all of which tailored to **OneLuaPro**'s needs. All version numbers follow the `v[Base]-[Commits]-[Hash]` format: The first part indicates the **stable base version**, followed by the **number of additional changes** since the last release, and a short **identifier (hash)** of the exact source code.
 
-| 👉 Are you missing an important Lua extension or Lua library? Please let us know [here](https://github.com/orgs/OneLuaPro/discussions/categories/ideas). 👈 |
+| 👉 Are you missing an important Lua extension or Lua library? Please let us know [here]([OneLuaPro · Discussions · GitHub](https://github.com/orgs/OneLuaPro/discussions)). 👈 |
 | :----------------------------------------------------------: |
 
 ### 💎 Core & Language
@@ -146,7 +146,6 @@ Documentation and reference manuals are available via the **OneLuaPro Help Cente
 | ------------------------------------------------------- | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ |
 | [argparse](https://github.com/OneLuaPro/argparse)       | Feature-rich command line parser for Lua inspired by argparse for Python | `v0.7.1-13-gdebe947` | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [lua_cliargs](https://github.com/OneLuaPro/lua_cliargs) | Command-line argument parsing module for Lua                 | `v3.0.2-7-gc4cf5f0`  | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-|                                                         |                                                              |                      |                                                              |
 | [ldoc](https://github.com/OneLuaPro/ldoc)               | Lua documentation generator which can also process C extension source files | `v1.5.0-23-g38be0fa` | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | [Luacheck](https://github.com/OneLuaPro/luacheck)       | Static analyzer and a linter for Lua. It detects various issues such as usage of undefined global variables, unused variables and values, accessing uninitialized variables, unreachable code and more. | `v1.2.0-40-g68c84bd` | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 
